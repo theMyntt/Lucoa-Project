@@ -1,0 +1,80 @@
+@font-face {
+  font-family: Circular;
+  src: url(CircularStd-Book.otf);
+}
+* {
+  margin: 0;
+  font-family: Circular, sans-serif;
+}
+.navbar {
+  position: fixed;
+  height: 75px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #3a0ca3;
+  color: #FFF;
+}
+.flex-content {
+  display:flex;
+}
+#logo-position {
+  margin-top: -1.5rem;
+  margin-left: 1cm;
+  display: flex;
+}
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  padding-top: 130px;
+}
+#img1 {
+  width: 60%;
+  border-radius: 10px;
+}
+#img2 {
+  width: 120px;
+}
+button {
+  height: 35px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #3a0ca3;
+  color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    padding-top: 130px;
+  }
+  .flex-content {
+    display: block;
+  }
+  #img1 {
+    width: 100%;
+    border-radius: 10px;
+  }
+  button {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  #img1 {
+    margin-right: 15px;
+  }
+  button {
+    width: 60%;
+  }
+}
+.principal {
+  font-size: 24px;
+}
+#gray {
+  color: #676e8b;
+}
+#a-pnn {
+  display: block;
+}
