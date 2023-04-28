@@ -1,0 +1,93 @@
+@font-face {
+	font-family: Circular;
+	src: url(CircularStd-Book.otf);
+}
+@media only screen and (max-width: 600px) {
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    padding-top: 130px;
+  }
+  .flex-content {
+    display: block;
+  }
+  .card {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .content {
+    width: 55%;
+  }
+  .card {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  button {
+    width: 60%;
+  }
+}
+* {
+	margin: 0;
+	font-family: Circular, sans-serif;
+}
+a {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+.navbar {
+  position: fixed;
+  height: 75px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #3a0ca3;
+  color: #FFF;
+}
+.flex-content {
+  display:flex;
+}
+#logo-position {
+  margin-top: 0.7rem;
+  margin-left: 1cm;
+  display: flex;
+}
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 130px;
+}
+#img2 {
+  width: 120px;
+}
+.card {
+  background-color: #FEFAE0;
+  border-radius: 10px;
+}
+.card-content {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+#weight-plus {
+  font-weight: 600;
+}
+#weight {
+  font-weight: 100;
+}
+#gray {
+  color: #676e8b;
+}
+#grey {
+  color: #343a40;
+}
+a {
+  text-decoration: none;
+  color: none;
+}
