@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Circular;
+    src: url(fonts/CircularStd-Book.otf);
+}
+@font-face {
+    font-family: JetBrains;
+    src: url(fonts/JetBrainsMono-Regular.ttf);
+}
+* {
+    margin: 0;
+    font-family: Circular, sans-serif;
+}
+.navbar {
+    position: fixed;
+    height: 75px;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #3a0ca3;
+    color: #FFF;
+}
+code {
+    font-family: JetBrains;
+    color: #000;
+}
+.mini-image {
+    width: 30px;
+}
+.gray {
+    color: #676e8b;
+}
+.grey {
+    color: #343a40;
+}
+.flex-content {
+    display:flex;
+}
+#logo-position {
+    margin-top: 0.7rem;
+    margin-left: 1cm;
+    display: flex;
+}
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    padding-top: 100px;
+}
+#img2 {
+    width: 120px;
+}
+@media only screen and (max-width: 600px) {
+    #content {
+      margin-left: auto;
+      margin-right: auto;
+      width: 85%;
+      padding-top: 130px;
+    }
+    .flex-content {
+      display: block;
+    }
+}
+@media only screen and (min-width: 601px) {
+    #content {
+        width: 55%;
+    }
+}
