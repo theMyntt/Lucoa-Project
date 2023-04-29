@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav class="nav">
+          <div id="logo-position">
+            <img src="img/logo.png" id="img2">
+          </div> 
+        </nav>  
+    </header>
+    <article id="content">
+        <h2>CSS: guia completo para iniciantes sobre os tipos, pros e contras, e a importância dessa poderosa ferramenta de estilização de sites.</h2>
+        <br>
+            <h2 style="display: flex;">Por &nbsp;<img src="img/y.png" class="mini-image"> Yasmim Kondo</h2>
+        <br>
+<div class="gray">
+<p>&nbsp;Ao utilizar a modificação visual dos sites, é valorizado utilizar um arquivo de CSS para melhor organização do código. O CSS é uma ferramenta fundamental para o desenvolvimento de sites modernos e responsivos, garantindo uma aparência visual agradável e consistente, uma organização do código HTML mais eficiente e uma adaptação a diferentes dispositivos e tamanhos de tela. Atualmente existem três tipos de CSS, que possuem a mesma função, porém diferentes pelo modo de ligação com o arquivo HTML.
+Para começar, vamos entender o CSS interno. Ele pode ser definido como um estilo que é inserido diretamente no cabeçalho do arquivo HTML.
+Para utilizar o CSS interno é necessário inserir a tag style dentro do cabeçalho (head). Após isso, basta adicionar as regras de estilo dentro da tag.
+É importante lembrar que as regras de estilo em CSS interno permanecem as mesmas, utilizando setores e propriedades. E também, que elas serão aplicadas somente na página HTML onde o código foi inserido. Caso haja a necessidade de estilizar elementos de outras páginas, será preciso utilizar o CSS externo, que iremos estudar nesse artigo, ou inserir o código CSS interno em cada uma das páginas.
+Aqui vai um exemplo de CSS interno:</p>
+<pre><code>
+&lt;head&gt;
+	&lt;style&gt;
+	h1 {
+		color: red;
+		font-size: 24px;
+	}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	 &lt;h1&gt;Titulo da página&lt;/h1&gt;
+	&lt;p&gt;Texto do parágrafo&lt;/p&gt;
+&lt;/body&gt;
+</code></pre>
+
+<br>
+
+<p>Além do CSS interno que já foi mencionado, existem mais dois tipos de CSS: o externo e o inline.
+O CSS externo é um arquivo separado do HTML, que contém todas as regras de estilo que serão aplicadas no site. Esse arquivo pode ser criado em um editor de texto qualquer, como o Bloco de Notas ou o Visual Studio Code, e deve ser salvo com a extensão “.css”. Depois disso, é necessário inserir uma referência ao arquivo CSS dentro do cabeçalho do HTML, utilizando a tag link. Essa tag deve conter o atributo “href”, que indica o caminho do arquivo CSS, e o atributo “rel”, que define o tipo de relação entre o arquivo CSS e o HTML.Ao utilizar o CSS externo, é possível aplicar as mesmas regras de estilo em várias páginas HTML, facilitando a manutenção do site. Além disso, o código HTML fica mais limpo, já que não é necessário inserir as regras de estilo dentro da tag style em cada página.
+Aqui vai um exemplo de um arquivo CSS externo:</p>
+
+<p>Arquivo.css</p>
+<pre><code>
+H1 {
+    Color: red;
+    Font-size: 24px;
+}
+</code></pre>
+
+<br>
+
+<p>Para referenciar esse arquivo no HTML, é necessário inserir o seguinte código no cabeçalho:</p>
+
+<pre><code>
+&lt;head&gt;
+  &lt;link rel=”stylesheet” <br>href=”arquivo.css”&gt;
+&lt;/head&gt;
+</code></pre>
+
+<br>
+
+<p>O segundo tipo de CSS é o inline, que consiste em inserir as regras de estilo diretamente na tag HTML do elemento que se deseja estilizar. Para isso, basta utilizar o atributo “style” na tag, e definir as regras de estilo dentro dele. Por exemplo: </p>
+
+<pre><code>
+&lt;body&gt;
+  &lt;h1 style=”color: red; <br>font-size: 24px;”&gt;Título da página<br>&lt;/h1&gt;
+  &lt;p style=”color: blue;”&gt;Texto do <br>parágrafo&lt;/p&gt;
+&lt;/body>
+</code></pre>
+
+<br>
+
+<p>Quando se trata de escolher entre os três tipos de CSS – interno, externo e inline – para iniciantes, a melhor opção é o CSS externo. Isso porque o CSS externo é um arquivo separado do HTML, que contém todas as regras de estilo que serão aplicadas no site. Isso facilita a organização do código e torna mais fácil a manutenção do mesmo, já que todas as regras de estilo estão em um único lugar. Além disso, o código HTML fica mais limpo, já que não é necessário inserir as regras de estilo dentro da tag style em cada página.
+Por outro lado, o CSS interno pode ser uma opção interessante caso você precise aplicar regras de estilo específicas para uma página HTML em particular, mas não é recomendado utilizá-lo para estilizar elementos de outras páginas.
+Por fim, o CSS inline deve ser evitado sempre que possível, já que dificulta a manutenção do código e pode tornar o HTML confuso e difícil de ler.
+Em resumo, o uso de CSS no arquivo HTML pode trazer diversos benefícios para o site, como uma aparência visual mais atrativa e uma maior organização do código. Porém, é preciso tomar cuidado com o excesso de regras de estilo e verificar a compatibilidade com diferentes navegadores e dispositivos.</p>
+</div>
+    </article>
+    <br><br>
+</body>
+</html>
